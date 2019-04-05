@@ -57,3 +57,17 @@ task runMemberMainUsingComponentScan(type: JavaExec) {
 	main = 'com.sjw.jdbc.chap04.MemberMainUsingComponentScan'
 	classpath =  sourceSets.main.runtimeClasspath
 }
+task runChap08MemberMain(type: JavaExec) {
+	main = 'com.sjw.jdbc.chap08.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runChap08MemberMainUsingSpring(type: JavaExec) {
+	main = 'com.sjw.jdbc.chap08.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runArticleMainUsingSpring (type: JavaExec) {
+	main = 'com.sjw.jdbc.spring.ArticleMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
