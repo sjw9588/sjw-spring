@@ -3,11 +3,10 @@ package com.sjw.jdbc.example;
 public class MemberDao {
 
 	public MemberDao() {
-		System.out.println("memberDao instance created.");
+		System.out.println("memberDao created.");
 	}
 	
 	public void getMember() {
-		System.out.println("getMember() is executed.");
+		System.out.println("사용자 정보를 가져왔습니다.");
 	}
-		
 }
