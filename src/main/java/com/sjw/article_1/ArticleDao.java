@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * 
  * @author Jacob
  */
-@Repository
+
 public interface ArticleDao {
 
 	/**

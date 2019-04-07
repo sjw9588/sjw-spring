@@ -2,17 +2,20 @@ package com.sjw.jdbc.chap08_1;
 
 import java.util.List;
 
-import com.sjw.jdbc.chap3.Member;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+
+import com.sjw.jdbc.chap3.Member;
 
 /**
  * 인터페이스 MemberDao의 구현체. SpringJdbc를 사용해서 구현
  * 
  * @author Jacob
  */
+@Repository
 public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 
 	static final String SELECT_BY_EMAIL = "SELECT memberId, email, name FROM member WHERE email=?";
@@ -23,6 +26,8 @@ public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 
 	static final String SELECT_ALL = "SELECT memberId, email, name FROM member ORDER BY memberId desc LIMIT ?,?";
 
+
+	@Autowired
 	JdbcTemplate jdbcTemplate;
 
 	/**
