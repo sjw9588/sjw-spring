@@ -2,8 +2,6 @@ package com.sjw.article_1;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 /**
  * Data Access Object.<br>
  * 데이터베이스에 접속해서 데이터를 조작하는 인터페이스.
