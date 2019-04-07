@@ -5,12 +5,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 /**
  * Spring JDBC를 사용해서 ArticleDao를 구현
  * 
  * @author Jacob
  */
+@Repository
 public class ArticleDaoImplUsingSpringJdbc implements ArticleDao {
 	/**
 	 * 목록 가져오는 sql

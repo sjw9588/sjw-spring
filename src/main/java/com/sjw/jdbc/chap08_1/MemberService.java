@@ -16,9 +16,9 @@ import com.sjw.jdbc.chap3.Member;
  */
 @Service
 public class MemberService {
-	@Autowired
+	
 	Logger logger = LogManager.getLogger();
-
+	@Autowired
 	MemberDao memberDao = null;
 
 	/**
