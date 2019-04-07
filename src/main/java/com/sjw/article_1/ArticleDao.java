@@ -1,4 +1,4 @@
-package com.sjw.article;
+package com.sjw.article_1;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
  * 
  * @author Jacob
  */
+@Repository
 public interface ArticleDao {
 
 	/**

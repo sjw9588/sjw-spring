@@ -10,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * 
  * @author Jacob
  */
+
 public class MemberMainUsingComponentScan {
 
 	public static void main(String[] args) {

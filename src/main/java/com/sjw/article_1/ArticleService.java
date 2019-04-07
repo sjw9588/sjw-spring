@@ -1,16 +1,19 @@
-package com.sjw.article;
+package com.sjw.article_1;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 /**
  * articleDao를 사용해서 글 목록, 조회, 추가, 수정, 삭제를 한다.
  * 
  * @author Jacob
  */
+@Service
 public class ArticleService {
+	@Autowired
 	ArticleDao articleDao;
 
 	public void setArticleDao(ArticleDao articleDao) {
